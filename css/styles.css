@@ -1,0 +1,135 @@
+html, body{
+  margin: 0;
+  margin-top: 28px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  line-height: normal;
+}
+
+.openSans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header img{
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+}
+
+#intro{
+  max-width: 1000px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intro .intro-left{
+  max-width: 210px;
+  position: relative;
+  margin-left: auto; margin-right: auto;
+}
+
+#intro .intro-right{
+  padding-right: 80px;
+}
+
+#intro h1{
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#intro p{
+  color: #959595;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#intro .intro-left-img img{
+  width: 400px;
+  margin: 0;
+  float: left;
+}
+
+#intro .intro-right-img img{
+  width: 400px;
+  margin: 0;
+  float: right;
+}
+
+#intro .intro-img img{
+  display: none;
+}
+
+#projects{
+  color: white;
+  background: black;
+  width: 1000px;
+  position: relative;
+  margin-left: auto; margin-right: auto;
+}
+
+#projects .container{
+  padding: 0;
+}
+
+#projects .projects-nav{
+  padding-bottom: 50px;
+}
+#projects .projects-nav-img img{
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+}
+
+#projects h1{
+  font-size: 12vw;
+  font-weight: 400;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#projects .projects-nav-title{
+  margin-left: 100px;
+}
+
+#projects .projects-nav-title th{
+  font-size: 20px;
+  text-align: left;
+  font-weight: 200;
+}
+
+#projects .projects-nav-title td{
+  font-size: 10px;
+  text-align: left;
+  font-weight: 200;
+  padding: 0 10px;
+}
+
+#projects #nav1{ padding-left: 0; }
+
+@media screen and (max-width: 600px) {
+  #intro .intro-left{ min-width: 250px; }
+  #intro .intro-right{
+    max-width: 250px;
+    padding: 0;
+    position: relative;
+    margin-left: auto; margin-right: auto;
+  }
+
+  #intro .intro-right h1{ font-size: 2.2em; }
+
+  #intro .intro-left-img img{ display: none; }
+  #intro .intro-right-img img{ display: none; }
+  #intro .intro-img img{
+    display: block;
+    width: 100%;
+    position: relative;
+	  margin-left: auto; margin-right: auto;
+  }
+}
