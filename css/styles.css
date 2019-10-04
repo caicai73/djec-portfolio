@@ -1,8 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body{
   margin: 0;
   margin-top: 28px;
   padding: 0;
-  height: 100%;
   width: 100%;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
@@ -13,18 +18,16 @@ html, body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.main-container{
+  max-width: 1000px;
+  margin: auto;
+}
+
 header img{
   max-width: 100%;
   vertical-align: middle;
   display: block;
   margin: auto;
-}
-
-#intro{
-  max-width: 1000px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #intro .intro-left{
@@ -38,8 +41,9 @@ header img{
 }
 
 #intro h1{
-  font-size: 50px;
+  font-size: 2.9em;
   font-weight: 900;
+  color: black;
 }
 
 #intro p{
@@ -50,14 +54,18 @@ header img{
 
 #intro .intro-left-img img{
   width: 400px;
+  height: auto;
   margin: 0;
   float: left;
 }
 
 #intro .intro-right-img img{
   width: 400px;
+  height: auto;
   margin: 0;
   float: right;
+  animation-duration: 3s;
+  animation-delay: 2s;
 }
 
 #intro .intro-img img{
@@ -67,51 +75,267 @@ header img{
 #projects{
   color: white;
   background: black;
-  width: 1000px;
-  position: relative;
-  margin-left: auto; margin-right: auto;
 }
 
 #projects .container{
   padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
 #projects .projects-nav{
   padding-bottom: 50px;
 }
+
 #projects .projects-nav-img img{
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
   display: block;
   margin: auto;
 }
 
 #projects h1{
-  font-size: 12vw;
+  font-size: 10rem;
   font-weight: 400;
   margin: auto;
   text-align: center;
   padding: 20px 0;
 }
 
-#projects .projects-nav-title{
-  margin-left: 100px;
-}
+#projects .projects-nav-title{ margin-bottom: 0; }
 
-#projects .projects-nav-title th{
+#projects .projects-nav-title li{
+  list-style: none;
   font-size: 20px;
-  text-align: left;
   font-weight: 200;
+  margin-left: 150px;
 }
 
-#projects .projects-nav-title td{
+#projects .projects-nav-list li{
+  list-style: none;
+  display: inline;
   font-size: 10px;
-  text-align: left;
   font-weight: 200;
   padding: 0 10px;
 }
 
-#projects #nav1{ padding-left: 0; }
+#projects .projects-nav-list{
+  margin-left: 90px;
+}
+
+#projects #nav1{ padding-left: 60px; }
+#projects #nav2{ padding-right: 0; }
+
+#projects .projects-nav-img2 img{
+  width: 100%;
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+}
+
+#p-madison{
+  color: white;
+  background: black;
+}
+
+#p-madison .container{
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+#p-madison h1{
+  font-size: 2.9em;
+  font-weight: 900;
+}
+
+#p-madison p{
+  color: #959595;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#p-madison .madison-left{
+  padding: 0 55px;
+}
+
+#p-madison .madison-right img{
+  max-width: 670px;
+  width: 100%;
+}
+
+#p-madison .madison-right{
+  position: relative;
+}
+
+#p-madison .under{
+  position: relative;
+  float: right;
+}
+
+#p-madison .over{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  float: right;
+}
+
+#p-tilt{
+  background: #ECB90F;
+}
+
+#p-tilt .container{
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+#p-tilt h1{
+  font-size: 2.9em;
+  font-weight: 900;
+  color: black;
+}
+
+#p-tilt p{
+  color: #5A5A5A;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#p-tilt .tilt-left{
+  padding: 0 55px;
+}
+
+#p-tilt .tilt-img img{
+  width: 100%;
+}
+
+#p-tilt .tilt-img2 img{
+  width: 100%;
+}
+
+#p-tilt .tilt-img2{
+  position: relative;
+}
+
+#p-tilt .under2{
+  position: relative;
+}
+
+#p-tilt .over2{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+#p-tilt .tilt-img3 img{
+  width: 100%;
+}
+
+#p-tilt .tilt-img3{
+  position: relative;
+}
+
+#p-tilt .under3{
+  position: relative;
+}
+
+#p-tilt .over3{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+#p-auxi{
+  color: white;
+  background: #051026;
+}
+
+#p-auxi .container{
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+#p-auxi .auxi-img img{
+  width: 100%;
+}
+
+#p-auxi h1{
+  font-size: 2.9em;
+  font-weight: 900;
+}
+
+#p-auxi p{
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#p-auxi .auxi-left{
+  padding: 0 55px;
+}
+
+#p-auxi .auxi-img2 img{
+  width: 100%;
+}
+
+#p-auxi .auxi-img2{
+  position: relative;
+}
+
+#p-auxi .under4{
+  position: relative;
+}
+
+#p-auxi .over4{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+#logos{
+  color: white;
+  background: #ABABAB;
+}
+
+#logos .container{
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+#logos h1{
+  font-size: 2.9em;
+  font-weight: 900;
+}
+
+#logos h2{
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+#logos p{
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#logos .logos-left{
+  padding: 0 55px;
+}
+
+#logos .logos-genosis-img img{
+  width: 300px;
+  padding: 15px 0;
+}
+
+#logos .logos-genosis-img2 img{
+  width: 800px;
+  float: right;
+}
+
+#logos .logos-genosis-img3 img{
+  width: 800px;
+}
 
 @media screen and (max-width: 600px) {
   #intro .intro-left{ min-width: 250px; }
@@ -132,4 +356,113 @@ header img{
     position: relative;
 	  margin-left: auto; margin-right: auto;
   }
+
+  #projects .projects-nav {
+    text-align: center;
+    position: relative;
+    margin-left: auto; margin-right: auto;
+    padding: 0;
+  }
+
+  #projects h1{ font-size: 4rem; }
+
+  #projects .projects-nav-title{
+    padding: 0;
+    position: relative;
+    margin-left: auto; margin-right: auto;
+    width: fit-content;
+  }
+
+  #projects .projects-nav-title li{
+    margin: 0;
+  }
+
+  #projects #nav1{ padding-left: 10px; }
+  #projects #nav2{ padding-right: 10px; }
+
+  #projects .projects-nav-list{
+    padding: 0;
+    margin-left: 0;
+    display: inline-block;
+    width: fit-content;
+  }
 }
+
+@media screen and (max-width: 767px) and (min-width: 601px){
+  #intro .intro-left{ min-width: 250px; }
+  #intro .intro-right{
+    max-width: 350px;
+    padding: 0;
+    position: relative;
+    margin-left: auto; margin-right: auto;
+  }
+
+  #intro .intro-right h1{ font-size: 2.7em; }
+
+  #intro .intro-left-img img{ display: none; }
+  #intro .intro-right-img img{ display: none; }
+  #intro .intro-img img{
+    display: block;
+    width: 100%;
+    position: relative;
+	  margin-left: auto; margin-right: auto;
+  }
+
+  #projects h1{ font-size: 7rem; }
+
+  #projects .projects-nav{
+    text-align: center;
+    position: relative;
+    margin-left: auto; margin-right: auto;
+    padding: 0;
+  }
+
+  #projects .projects-nav-title{
+    padding: 0;
+    position: relative;
+    margin-left: auto; margin-right: auto;
+    width: fit-content;
+  }
+
+  #projects .projects-nav-title li{
+    margin: 0;
+  }
+
+  #projects #nav1{ padding-left: 10px; }
+  #projects #nav2{ padding-right: 10px; }
+
+  #projects .projects-nav-list{
+    padding: 0;
+    margin-left: 0;
+    display: inline-block;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 823px) and (min-width: 768px){
+  #intro .intro-left{ min-width: 250px; }
+  #intro .intro-right{
+    max-width: 300px;
+    padding: 0;
+    position: relative;
+    margin-left: auto; margin-right: auto;
+  }
+
+  #intro .intro-right h1{ font-size: 2.5em; }
+
+  #projects h1{ font-size: 6.5rem; }
+}
+
+@media screen and (min-width: 600px) {
+  #p-madison .madison-left p{ width: 300px; }
+  #p-tilt .tilt-left p{ width: 300px; }
+  #p-auxi .auxi-left p{ width: 300px; }
+  #logos .logos-left p{ width: 300px; }
+}
+
+/* Use to see padding/margin outlines */
+/* {
+  	background: #000 !important;
+  	color: #0f0 !important;
+  	outline: solid #f00 1px !important;
+}*/
