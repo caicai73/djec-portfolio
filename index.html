@@ -8,7 +8,7 @@
     <title>JC Design Portfolio</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,600,800&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
@@ -16,18 +16,45 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">JC Design Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Nav for small screens -->
+    <nav>
+      <div id="navnav" class="col-md-12 col-ms-12">
+        <div class="nav-list openSans">
+          <ul class="projects-nav-title">
+            <li><a class="nav-style"href="#nav-projects">&mdash;&mdash;&mdash;&mdash;PROJECTS</a></li>
+          </ul>
+          <ul class="projects-nav-list">
+            <li id="nav1"><a class="nav-style"href="#p-madison">MADISON</a></li>
+            <li><a class="nav-style"href="#tilt-nav">TS-2</a></li>
+            <li><a class="nav-style"href="#auxi-nav">XLM</a></li>
+            <li><a class="nav-style"href="#logos">LOGO DESIGN</a></li>
+            <li id="nav2"><a class="nav-style"href="#extras-nav">EXTRAS</a></li>
+          </ul>
+        </div>
+        <div class="nav-img">
+          <img src="imgs/img27-nav.png" alt="Navbar">
+        </div>
+      </div>
+    </nav>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto navbar-right">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#intro">Introduction</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        </ul>
+    <!-- Nav for medium screens -->
+    <nav>
+      <div id="navnav2" class="col-md-12 col-ms-12">
+        <div class="nav-list openSans">
+          <ul class="projects-nav-title">
+            <li><a class="nav-style"href="#nav-projects">&mdash;&mdash;&mdash;&mdash;PROJECTS</a></li>
+          </ul>
+          <ul class="projects-nav-list">
+            <li id="nav1"><a class="nav-style"href="#p-madison">MADISON</a></li>
+            <li><a class="nav-style"href="#tilt-nav">TS-2</a></li>
+            <li><a class="nav-style"href="#auxi-nav">XLM</a></li>
+            <li><a class="nav-style"href="#logos">LOGO DESIGN</a></li>
+            <li id="nav2"><a class="nav-style"href="#extras-nav">EXTRAS</a></li>
+          </ul>
+        </div>
+        <div class="nav-img">
+          <img src="imgs/img27-nav.png" alt="Navbar">
+        </div>
       </div>
     </nav>
 
@@ -91,17 +118,17 @@
               <div class="projects-nav-img">
                 <img src="imgs/img5-connect.png" alt="Connecter">
               </div>
-              <div class="projects-nav openSans">
+              <div id="nav-projects"class="projects-nav openSans">
                 <h1>PROJECTS</h1>
                 <ul class="projects-nav-title">
-                  <li>&mdash;&mdash;&mdash;&mdash;PROJECTS</li>
+                  <li><a class="nav-style"href="#nav-projects">&mdash;&mdash;&mdash;&mdash;PROJECTS</a></li>
                 </ul>
                 <ul class="projects-nav-list">
-                  <li id="nav1">MADISON</li>
-                  <li>TS-2</li>
-                  <li>XLM</li>
-                  <li>LOGO DESIGN</li>
-                  <li id="nav2">EXTRAS</li>
+                  <li id="nav1"><a class="nav-style"href="#p-madison">MADISON</a></li>
+                  <li><a class="nav-style"href="#tilt-nav">TS-2</a></li>
+                  <li><a class="nav-style"href="#auxi-nav">XLM</a></li>
+                  <li><a class="nav-style"href="#logos">LOGO DESIGN</a></li>
+                  <li id="nav2"><a class="nav-style"href="#extras-nav2">EXTRAS</a></li>
                 </ul>
               </div>
               <div class="projects-nav-img2">
@@ -129,7 +156,18 @@
               </div>
             </div>
             <div class="col-md-7 col-sm-12">
-
+              <div class="madison-left-nav openSans">
+                <ul class="projects-nav-list">
+                  <li id="nav1"><a class="nav-style"href="#p-madison">MADISON</a></li>
+                  <li><a class="nav-style"href="#tilt-nav">TS-2</a></li>
+                  <li><a class="nav-style"href="#auxi-nav">XLM</a></li>
+                  <li><a class="nav-style"href="#logos">LOGO DESIGN</a></li>
+                  <li id="nav2"><a class="nav-style"href="#extras-nav2">EXTRAS</a></li>
+                </ul>
+                <ul class="projects-nav-title">
+                  <li><a class="nav-style"href="#nav-projects">&mdash;&mdash;&mdash;&mdash;PROJECTS</a></li>
+                </ul>
+              </div>
             </div>
             <div class="col-md-12 col-sm-12">
               <div class="madison-right">
@@ -149,7 +187,7 @@
                 <img src="imgs/img9-tilt.png" alt="Tilt Sensor TS-2 Render">
               </div>
             </div>
-            <div class="col-md-5 col-sm-12">
+            <div id="tilt-nav"class="col-md-5 col-sm-12">
               <div class="tilt-left">
                 <h1>TILT SENSOR<br>TS-2</h1>
                 <p>
@@ -159,6 +197,20 @@
         	        Designed improvement and implemented all visual elements, multiple capabilities of mounting options and brand new design look. <br><br>
                   Additional flange was also designed to accompanied with this unit.
                 </p>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="tilt-left-nav openSans">
+                <ul class="projects-nav-list">
+                  <li id="nav1"><a class="nav-style"href="#p-madison">MADISON</a></li>
+                  <li><a class="nav-style"href="#tilt-nav">TS-2</a></li>
+                  <li><a class="nav-style"href="#auxi-nav">XLM</a></li>
+                  <li><a class="nav-style"href="#logos">LOGO DESIGN</a></li>
+                  <li id="nav2"><a class="nav-style"href="#extras-nav2">EXTRAS</a></li>
+                </ul>
+                <ul class="projects-nav-title">
+                  <li><a class="nav-style"href="#nav-projects">&mdash;&mdash;&mdash;&mdash;PROJECTS</a></li>
+                </ul>
               </div>
             </div>
             <div class="col-md-12 col-sm-12">
@@ -185,13 +237,27 @@
                 <img src="imgs/img14-auxi-connect.png" alt="Connecter">
               </div>
             </div>
-            <div class="col-md-12 col-sm-12">
+            <div id="auxi-nav" class="col-md-5 col-sm-12">
               <div class="auxi-left">
                 <h1>AUXILIUM</h1>
                 <p>Auxilium product <br><br>
                   Designed and implemented all visual elements, product re-branded. Injection moulded with structural product ribs. <br><br>
                   Rugged design, triangular structure with 3 mounting points.
                 </p>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="auxi-left-nav openSans">
+                <ul class="projects-nav-list">
+                  <li id="nav1"><a class="nav-style"href="#p-madison">MADISON</a></li>
+                  <li><a class="nav-style"href="#tilt-nav">TS-2</a></li>
+                  <li><a class="nav-style"href="#auxi-nav">XLM</a></li>
+                  <li><a class="nav-style"href="#logos">LOGO DESIGN</a></li>
+                  <li id="nav2"><a class="nav-style"href="#extras-nav2">EXTRAS</a></li>
+                </ul>
+                <ul class="projects-nav-title">
+                  <li><a class="nav-style"href="#nav-projects">&mdash;&mdash;&mdash;&mdash;PROJECTS</a></li>
+                </ul>
               </div>
             </div>
             <div class="col-md-12 col-sm-12">
@@ -207,7 +273,7 @@
       <section id="logos">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-sm-12">
+            <div class="col-md-5 col-sm-12">
               <div class="logos-left">
                 <h1>LOGO DESIGN</h1>
                 <h2 class="openSans">&mdash;&mdash;&mdash;XING LOGO</h2>
@@ -219,9 +285,25 @@
         	  	    Created brand new graphics to symbolize what the brand was about. <br><br>
         	  	    Through the use of clear visual and simple font and modifications this logo was designed and picked by Xing.
                 </p>
-                <div class="logos-genosis-img2">
-                  <img src="imgs/img18-logo-genosis2.png" alt="Genosis Render">
-                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+              <div class="logos-left-nav openSans">
+                <ul class="projects-nav-list">
+                  <li id="nav1"><a class="nav-style"href="#p-madison">MADISON</a></li>
+                  <li><a class="nav-style"href="#tilt-nav">TS-2</a></li>
+                  <li><a class="nav-style"href="#auxi-nav">XLM</a></li>
+                  <li><a class="nav-style"href="#logos">LOGO DESIGN</a></li>
+                  <li id="nav2"><a class="nav-style"href="#extras-nav2">EXTRAS</a></li>
+                </ul>
+                <ul class="projects-nav-title">
+                  <li><a class="nav-style"href="#nav-projects">&mdash;&mdash;&mdash;&mdash;PROJECTS</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <div class="logos-genosis-img2">
+                <img src="imgs/img18-logo-genosis2.png" alt="Genosis Render">
               </div>
             </div>
             <div class="col-md-12 col-sm-12">
@@ -297,9 +379,23 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12">
-              <div class="extras-title">
+              <div id="extras-nav" class="extras-title">
                 <img src="imgs/img26-extra-connect.png" alt="Connecter">
-                <h1>EXTRAS</h1>
+                <h1 id="extras-nav2">EXTRAS</h1>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <div class="extras-left-nav openSans">
+                <ul class="projects-nav-title">
+                  <li><a class="nav-style"href="#nav-projects">&mdash;&mdash;&mdash;&mdash;PROJECTS</a></li>
+                </ul>
+                <ul class="projects-nav-list">
+                  <li id="nav1"><a class="nav-style"href="#p-madison">MADISON</a></li>
+                  <li><a class="nav-style"href="#tilt-nav">TS-2</a></li>
+                  <li><a class="nav-style"href="#auxi-nav">XLM</a></li>
+                  <li><a class="nav-style"href="#logos">LOGO DESIGN</a></li>
+                  <li id="nav2"><a class="nav-style"href="#extras-nav2">EXTRAS</a></li>
+                </ul>
               </div>
             </div>
             <div class="col-md-12 col-sm-12">
@@ -328,7 +424,7 @@
           <li>Designed by Jeremy Courcieres.</li>
       </ul>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -356,6 +452,33 @@
         }
       });
     });
+    </script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+      (function($) {
+          $(document).ready(function(){
+              $(window).scroll(function(){
+                  if ($(this).scrollTop() > 1450) {
+                      $('#navnav').fadeIn(500);
+                  } else {
+                      $('#navnav').fadeOut(500);
+                  }
+              });
+          });
+      })(jQuery);
+    </script>
+    <script type="text/javascript">
+      (function($) {
+          $(document).ready(function(){
+              $(window).scroll(function(){
+                  if ($(this).scrollTop() > 2050) {
+                      $('#navnav2').fadeIn(500);
+                  } else {
+                      $('#navnav2').fadeOut(500);
+                  }
+              });
+          });
+      })(jQuery);
     </script>
   </body>
 </html>
