@@ -15,7 +15,7 @@ html, body{
 }
 
 .openSans{
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .main-container{
@@ -23,6 +23,8 @@ html, body{
   margin: auto;
   margin-bottom: 5.625rem;
 }
+
+nav{ display: none; }
 
 header img{
   max-width: 100%;
@@ -34,7 +36,7 @@ header img{
 footer{
   background: black;
   color: white;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
   text-align: center;
   position: fixed;
   bottom: 0;
@@ -42,14 +44,11 @@ footer{
   font-weight: 200;
 }
 
-footer ul{
-  list-style: none;
-  margin: 0;
-}
+footer span{ padding: 0 0.2rem; }
 
-footer li{
-  display: inline;
-}
+footer .contact{ color: white; }
+
+hr{ background: white; }
 
 #intro .container{
   padding: 0;
@@ -139,7 +138,6 @@ footer li{
 #projects .projects-nav-title li{
   list-style: none;
   font-size: 1.25em;
-  /* font-weight: 200; */
   margin-left: 9.375rem;
 }
 
@@ -662,12 +660,13 @@ footer li{
 }
 
 @media screen and (max-width: 600px) {
+  /* nav { visibility: visible;} */
   nav #navnav{
     padding: 0;
     position: fixed;
   	top: 0px;
     z-index: 9999;
-    display: none;
+    display: unset!important;
     opacity: 0.9;
   }
   nav img{ width: 100%; }
@@ -784,7 +783,7 @@ footer li{
   nav #navnav{
     padding: 0;
     position: fixed;
-    top: 0px;
+  	top: 0px;
     z-index: 9999;
     display: none;
     opacity: 0.9;
