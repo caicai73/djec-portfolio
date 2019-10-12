@@ -665,9 +665,9 @@ hr{ background: white; }
   nav #navnav{
     padding: 0;
     position: fixed;
-  	top: 0px;
+    top: 0px;
     z-index: 9999;
-    display: unset!important;
+    display: none;
     opacity: 0.9;
   }
   nav img{ width: 100%; }
@@ -713,7 +713,7 @@ hr{ background: white; }
     display: block;
     width: 100%;
     position: relative;
-	  margin-left: auto; margin-right: auto;
+    margin-left: auto; margin-right: auto;
   }
 
   #projects .projects-nav {
@@ -784,7 +784,7 @@ hr{ background: white; }
   nav #navnav{
     padding: 0;
     position: fixed;
-  	top: 0px;
+    top: 0px;
     z-index: 9999;
     display: none;
     opacity: 0.9;
