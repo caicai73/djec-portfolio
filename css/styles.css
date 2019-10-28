@@ -217,7 +217,7 @@ hr{ background: white; }
   right:0;
   top: 0;
   float: right;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
 }
 
 #p-madison svg{
