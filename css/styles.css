@@ -197,9 +197,7 @@ hr{ background: white; }
   width: 100%;
 }
 
-#p-madison .madison-right{
-  position: relative;
-}
+#p-madison .madison-right{ position: relative; }
 
 #p-madison .under{
   position: relative;
@@ -211,6 +209,45 @@ hr{ background: white; }
   right: 0px;
   top: 0px;
   float: right;
+  padding: 5rem 3rem;
+}
+
+#p-madison .over2{
+  position: absolute;
+  right:0;
+  top: 0;
+  float: right;
+  padding: 5rem 0;
+}
+
+#p-madison svg{
+  /* height: 580px; */
+  max-width: 640px;
+  width: 100%;
+}
+
+#p-madison path{
+  stroke-dasharray: 280;
+  animation: draw 2.5s forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+@keyframes draw{
+  0% { opacity: 1; }
+  100% { opacity: 1; }
+  from { stroke-dashoffset: 280 }
+  to { stroke-dashoffset: 0; }
+}
+
+#p-madison .m-txt1{
+  fill: black;
+  font: 200 0.69em Roboto;
+}
+
+#p-madison .m-txt2, .m-txt3, .m-txt4{
+  fill: white;
+  font: 200 0.7em Roboto;
 }
 
 #p-madison .nav-style{ color: white; }
@@ -663,7 +700,7 @@ hr{ background: white; }
   nav #navnav{
     padding: 0;
     position: fixed;
-    top: 0px;
+  	top: 0px;
     z-index: 9999;
     display: none;
     opacity: 0.9;
@@ -711,7 +748,7 @@ hr{ background: white; }
     display: block;
     width: 100%;
     position: relative;
-    margin-left: auto; margin-right: auto;
+	  margin-left: auto; margin-right: auto;
   }
 
   #projects .projects-nav {
@@ -744,6 +781,7 @@ hr{ background: white; }
 
   #p-madison .madison-left{ margin-top: 5.5rem; }
   #p-madison .madison-left-nav{ display: none;}
+  #p-madison .over2{ padding: 6.3rem 3rem; }
 
   #p-tilt .tilt-left{ margin-top: 5.5rem; }
   #p-tilt .tilt-left-nav{ display: none;}
@@ -782,7 +820,7 @@ hr{ background: white; }
   nav #navnav{
     padding: 0;
     position: fixed;
-    top: 0px;
+  	top: 0px;
     z-index: 9999;
     display: none;
     opacity: 0.9;
