@@ -221,7 +221,7 @@ hr{ background: white; }
 }
 
 #p-madison svg{
-  /* height: 580px; */
+  min-height: 1px;
   max-width: 640px;
   width: 100%;
 }
