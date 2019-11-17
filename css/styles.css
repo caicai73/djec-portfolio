@@ -220,36 +220,6 @@ hr{ background: white; }
   padding: 5rem 1rem;
 }
 
-#p-madison svg{
-  min-height: 1px;
-  max-width: 640px;
-  width: 100%;
-}
-
-#p-madison path{
-  stroke-dasharray: 280;
-  animation: draw 2.5s forwards;
-  animation-delay: 4s;
-  opacity: 0;
-}
-
-@keyframes draw{
-  0% { opacity: 1; }
-  100% { opacity: 1; }
-  from { stroke-dashoffset: 280 }
-  to { stroke-dashoffset: 0; }
-}
-
-#p-madison .m-txt1{
-  fill: black;
-  font: 200 0.69em Roboto;
-}
-
-#p-madison .m-txt2, .m-txt3, .m-txt4{
-  fill: white;
-  font: 200 0.7em Roboto;
-}
-
 #p-madison .nav-style{ color: white; }
 #p-madison .nav-style:hover{
   color: #FF0000;
@@ -284,6 +254,291 @@ hr{ background: white; }
   float: right;
   transform: rotate(180deg);
   margin-right: 3.125rem;
+}
+
+#p-madison .madi-expand-right{
+  margin-top: 3rem;
+}
+
+#p-madison .madi-expand-right h1{
+  font-size: 2.5em;
+  line-height: 0.9;
+  text-align: center;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+#p-madison .madi-expand-right-mobile{
+  display: none;
+}
+
+#p-madison .madi-expand-left{
+  margin-top: 3rem;
+}
+
+#p-madison .trafficlight{
+  width: 30px;
+  height: 330px;
+  border-radius: 10px;
+  position: relative;
+  opacity: 0.9;
+}
+
+#p-madison .trafficlight:after{
+  background: #959595;
+  content: "";
+  width: 5px;
+  height: 330px;
+  left: 8.6625rem;
+  position: absolute;
+  z-index: -1;
+}
+
+#p-madison .trafficlight2{
+  width: 30px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+#p-madison .trafficlight2:after{
+  background: #959595;
+  content: "";
+  width: 5px;
+  height: 330px;
+  right: 8.6625rem;
+  top: 3rem;
+  position: absolute;
+  z-index: -1;
+}
+
+#p-madison .red{
+  background: red;
+  background-image: radial-gradient(brown, transparent);
+  background-size: 5px 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.25rem;
+  left: 6.7875rem;
+  animation: 7s red infinite;
+  box-shadow:
+    0 0 20px #111 inset,
+    0 0 10px red;
+}
+
+#p-madison .red-b{
+  background-size: 5px 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.9375rem;
+  left: 6.5375rem;
+  border: solid 4px #222;
+}
+
+#p-madison .red2{
+  background: red;
+  background-image: radial-gradient(brown, transparent);
+  background-size: 5px 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4.25rem;
+  right: 6.7875rem;
+  animation: 7s red2 infinite;
+  box-shadow:
+    0 0 20px #111 inset,
+    0 0 10px red;
+}
+
+#p-madison .red2-b{
+  background-size: 5px 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3.9375rem;
+  right: 6.5375rem;
+  border: solid 4px #222;
+}
+
+#p-madison .yellow{
+  background: yellow;
+  background-image: radial-gradient(orange, transparent);
+  background-size: 5px 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8.0625rem;
+  left: 6.7875rem;
+  animation: 7s yellow infinite;
+  box-shadow:
+    0 0 20px #111 inset,
+    0 0 10px yellow;
+}
+
+#p-madison .yellow-b{
+  background-size: 5px 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 7.75rem;
+  left: 6.5375rem;
+  border: solid 4px #222;
+}
+
+#p-madison .yellow2{
+  background: yellow;
+  background-image: radial-gradient(orange, transparent);
+  background-size: 5px 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: 11.0625rem;
+  right: 6.7875rem;
+  animation: 7s yellow2 infinite;
+  box-shadow:
+    0 0 20px #111 inset,
+    0 0 10px yellow;
+}
+
+#p-madison .yellow2-b{
+  background-size: 5px 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10.75rem;
+  right: 6.5375rem;
+  border: solid 4px #222;
+}
+
+#p-madison .green{
+  background: green;
+  background-image: radial-gradient(lime, transparent);
+  background-size: 5px 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: 14.875rem;
+  left: 6.7875rem;
+  box-shadow:
+    0 0 20px #111 inset,
+    0 0 10px lime;
+  animation: 7s green infinite;
+}
+
+#p-madison .green-b{
+  background-size: 5px 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 14.5625rem;
+  left: 6.5375rem;
+  border: solid 4px #222;
+}
+
+#p-madison .green2{
+  background: green;
+  background-image: radial-gradient(lime, transparent);
+  background-size: 5px 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: 17.875rem;
+  right: 6.7875rem;
+  box-shadow:
+    0 0 20px #111 inset,
+    0 0 10px lime;
+  animation: 7s green2 infinite;
+}
+
+#p-madison .green2-b{
+  background-size: 5px 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 17.5625rem;
+  right: 6.5375rem;
+  border: solid 4px #222;
+}
+
+@keyframes green{
+  0%{opacity: 1;}
+  30%{opacity: 1;}
+  31%{opacity: .1;}
+  100%{opacity: .1;}
+}
+
+@keyframes yellow{
+  0%{opacity: .1;}
+  30%{opacity: .1;}
+  31%{opacity: 1;}
+  49%{opacity: 1;}
+  50%{opacity: .1;}
+  100%{opacity: .1;}
+}
+
+@keyframes red{
+  0%{opacity: .1;}
+  50%{opacity: .1;}
+  51%{opacity: 1;}
+  100%{opacity: 1;}
+}
+
+@keyframes green2{
+  0%{opacity: .1;}
+  50%{opacity: .1;}
+  51%{opacity: 1;}
+  80%{opacity: 1;}
+  81%{opacity: .1;}
+  100%{opacity: .1;}
+}
+
+@keyframes yellow2{
+  0%{opacity: .1;}
+  80%{opacity: .1;}
+  81%{opacity: 1;}
+  100%{opacity: 1;}
+}
+
+@keyframes red2{
+  0%{opacity: 1;}
+  49%{opacity: 1;}
+  50%{opacity: .1;}
+  100%{opacity: .1;}
+}
+
+#p-madison .madi-expand-gostop img{
+  max-width: 691px;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 0 3rem;
+}
+
+#p-madison .madi-expand-gostop{ position: relative; }
+
+#p-madison .madi-expand-gostop .under5{
+  position: relative;
+  float: left;
+}
+
+#p-madison .madi-expand-gostop .over5{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  float: left;
+  /* padding: 5rem 3rem; */
 }
 
 #p-tilt{ background: #ECB90F; }
@@ -695,6 +950,174 @@ hr{ background: white; }
   text-align: center;
 }
 
+@media screen and (max-width: 376px) {
+  #p-madison .trafficlight{
+    height: 200px;
+  }
+  #p-madison .trafficlight:after{
+    left: 4.8625rem;
+    width: 3px;
+    height: 200px;
+  }
+  #p-madison .trafficlight2:after{
+    right: 10.8625rem;
+    width: 3px;
+    height: 200px;
+  }
+  #p-madison .red{
+    left: 3.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .red-b{
+    left: 3.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .red2{
+    right: 9.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .red2-b{
+    right: 9.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .yellow{
+    top: 5.0625rem;
+    left: 3.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .yellow2{
+    top: 8.0625rem;
+    right: 9.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .yellow-b{
+    top: 4.75rem;
+    left: 3.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .yellow2-b{
+    top: 7.75rem;
+    right: 9.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .green{
+    top: 8.875rem;
+    left: 3.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .green-b{
+    top: 8.5625rem;
+    left: 3.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .green2{
+    top: 11.875rem;
+    right: 9.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .green2-b{
+    top: 11.5625rem;
+    right: 9.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 451px) and (min-width: 377px){
+  #p-madison .trafficlight{
+    height: 200px;
+  }
+  #p-madison .trafficlight:after{
+    left: 5.8625rem;
+    width: 3px;
+    height: 200px;
+  }
+  #p-madison .trafficlight2:after{
+    right: 12.8625rem;
+    width: 3px;
+    height: 200px;
+  }
+  #p-madison .red{
+    left: 4.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .red-b{
+    left: 4.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .red2{
+    right: 11.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .red2-b{
+    right: 11.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .yellow{
+    top: 5.0625rem;
+    left: 4.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .yellow-b{
+    top: 4.75rem;
+    left: 4.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .yellow2{
+    top: 8.0625rem;
+    right: 11.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .yellow2-b{
+    top: 7.75rem;
+    right: 11.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .green{
+    top: 8.875rem;
+    left: 4.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .green-b{
+    top: 8.5625rem;
+    left: 4.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+  #p-madison .green2{
+    top: 11.875rem;
+    right: 11.7875rem;
+    width: 35px;
+    height: 35px;
+  }
+  #p-madison .green2-b{
+    top: 11.5625rem;
+    right: 11.5375rem;
+    width: 45px;
+    height: 45px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   /* nav { visibility: visible;} */
   nav #navnav{
@@ -782,6 +1205,17 @@ hr{ background: white; }
   #p-madison .madison-left{ margin-top: 5.5rem; }
   #p-madison .madison-left-nav{ display: none;}
   #p-madison .over2{ padding: 6.3rem 3rem; }
+  #p-madison .madi-expand-right{ display: none; }
+  #p-madison .madi-expand-right-mobile{
+    display: block;
+    padding: 2rem;
+  }
+  #p-madison .madi-expand-right-mobile h1{
+    font-size: 2.4em;
+    line-height: 0.9;
+    text-align: center;
+    font-weight: 600;
+  }
 
   #p-tilt .tilt-left{ margin-top: 5.5rem; }
   #p-tilt .tilt-left-nav{ display: none;}
@@ -894,6 +1328,25 @@ hr{ background: white; }
   }
   #p-madison .madison-left{ margin-top: 6.5rem; }
   #p-madison .madison-left-nav{ display: none; }
+  #p-madison .madi-expand-right{ display: none; }
+  #p-madison .madi-expand-right-mobile{
+    display: block;
+    padding: 2rem;
+  }
+  #p-madison .madi-expand-right-mobile h1{
+    font-size: 2.4em;
+    line-height: 0.9;
+    text-align: center;
+    font-weight: 600;
+  }
+  #p-madison .trafficlight:after{ left: 8.6625rem; }
+  #p-madison .trafficlight2:after{ right: 22.6625rem; }
+  #p-madison .red2{ right: 20.7875rem; }
+  #p-madison .red2-b{ right: 20.5375rem; }
+  #p-madison .yellow2{ right: 20.7875rem; }
+  #p-madison .yellow2-b{ right: 20.5375rem; }
+  #p-madison .green2{ right: 20.7875rem; }
+  #p-madison .green2-b{ right: 20.5375rem; }
 
   #p-tilt .tilt-left{ margin-top: 6.5rem; }
   #p-tilt .tilt-left-nav{ display: none; }
@@ -961,6 +1414,15 @@ hr{ background: white; }
     display: inline-block;
     width: fit-content;
   }
+
+  #p-madison .trafficlight:after{ left: 8.6625rem; }
+  #p-madison .trafficlight2:after{ right: 2.6625rem; }
+  #p-madison .red2{ right: 0.7875rem; }
+  #p-madison .red2-b{ right: 0.5375rem; }
+  #p-madison .yellow2{ right: 0.7875rem; }
+  #p-madison .yellow2-b{ right: 0.5375rem; }
+  #p-madison .green2{ right: 0.7875rem; }
+  #p-madison .green2-b{ right: 0.5375rem; }
 
   #logos .logos-genosis-img2 img{
     float: none;
