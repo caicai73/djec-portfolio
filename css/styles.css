@@ -541,6 +541,109 @@ hr{ background: white; }
   /* padding: 5rem 3rem; */
 }
 
+#p-madison .madi-expand-selftest img{
+  max-width: 700px;
+  width: 100%;
+  padding-left: 3rem;
+}
+
+#p-madison .madi-expand-selftest{ position: relative; }
+
+#p-madison .madi-expand-selftest .under6{
+  position: relative;
+  float: left;
+}
+
+#p-madison .madi-expand-selftest .over6{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  float: left;
+}
+
+#p-madison .madi-expand-direction img{
+  max-width: 800px;
+  width: 100%;
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+
+#p-madison .madi-expand-direction{ position: relative; }
+
+#p-madison .madi-expand-direction .under7{
+  position: relative;
+  float: left;
+}
+
+#p-madison .madi-expand-direction .over7{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  float: left;
+}
+
+#p-madison .madi-expand-proto-title h3{
+  color: #959595;
+  font-weight: 600;
+  margin-top: 3rem;
+  padding: 0 10rem;
+}
+
+#p-madison .madi-expand-prototypes img{
+  max-width: 1000px;
+  width: 100%;
+  padding: 1rem 5rem;
+}
+
+#p-madison .madi-expand-prototypes{ position: relative; }
+
+#p-madison .madi-expand-prototypes .under8{
+  position: relative;
+  float: left;
+}
+
+#p-madison .madi-expand-prototypes .over8{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  float: left;
+}
+
+#p-madison .madi-expand-proposal-title h3{
+  color: #959595;
+  font-weight: 600;
+  /* margin-top: 2rem; */
+  padding: 0 10rem;
+}
+
+#p-madison .madi-expand-proposal img{
+  max-width: 500px;
+  width: 100%;
+  padding: 1rem 5rem;
+  border-right: 0.1px solid white;
+}
+
+#p-madison .madi-expand-proposal h3{
+  color: #959595;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#p-madison .madi-expand-proposal2 img{
+  max-width: 440px;
+  width: 100%;
+  padding: 1rem 5rem;
+}
+
+#p-madison .madi-expand-proposal2 h3{
+  color: #959595;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
 #p-tilt{ background: #ECB90F; }
 
 #p-tilt .container{
@@ -1215,6 +1318,20 @@ hr{ background: white; }
     line-height: 0.9;
     text-align: center;
     font-weight: 600;
+  }
+  #p-madison .madi-expand-selftest img{
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  #p-madison .madi-expand-direction img{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  #p-madison .madi-expand-proto-title h3{
+    padding: 0 3.5rem;
+  }
+  #p-madison .madi-expand-proposal img{
+    border: none;
   }
 
   #p-tilt .tilt-left{ margin-top: 5.5rem; }
