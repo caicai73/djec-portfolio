@@ -1442,7 +1442,7 @@ hr{ background: white; }
 
   #p-tilt .tilt-left{ margin-top: 5.5rem; }
   #p-tilt .tilt-left-nav{ display: none;}
-  #p-tilt .t-expand{ height: 2570px; }
+  #p-tilt .t-expand{ max-height: 2570px; }
   #p-tilt .tilt-expand-batch-title h1{ display: none; }
   #p-tilt .tilt-expand-batch-title-mob h1{
     display: block;
@@ -1672,7 +1672,7 @@ hr{ background: white; }
   #p-madison .green2{ right: 0.7875rem; }
   #p-madison .green2-b{ right: 0.5375rem; }
 
-  #p-tilt .t-expand{ height: 3300px; }
+  #p-tilt .t-expand{ max-height: 3300px; }
 
   #logos .logos-genosis-img2 img{
     float: none;
