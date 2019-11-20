@@ -187,6 +187,10 @@ hr{ background: white; }
   padding: 2rem 3.4rem;
 }
 
+#p-madison .madison-left p{
+  padding-bottom: 1rem;
+}
+
 #p-madison .madison-left-nav{
   padding-top: 2rem;
   height: 355px;
@@ -282,9 +286,36 @@ hr{ background: white; }
   overflow: hidden;
 }
 
-#p-madison .madison-left a{
+#p-madison .madi-button{
+  background: white;
+  border-radius: 5%;
+}
+
+#p-madison .madi-button:hover{
+  background: #BB0000;
   color: white;
-  padding: 1rem 0;
+  text-decoration: none;
+}
+
+.horizontal {
+  animation: horizontal_7003 5.72s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes horizontal_7003 {
+  0% { transform:translate(0,0) }
+  2.0979% { transform:translate(5px,0) }
+  4.1958% { transform:translate(0,0) }
+  6.29371% { transform:translate(5px,0) }
+  8.39161% { transform:translate(0,0) }
+  10.48951% { transform:translate(5px,0) }
+  12.58741% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}
+
+#p-madison .madison-left a{
+  color: black;
+  padding: 0.5rem 0.5rem;
   font-size: 0.9em;
 }
 
@@ -677,10 +708,15 @@ hr{ background: white; }
   color: #5A5A5A;
   font-size: 0.9em;
   font-weight: 300;
+
 }
 
 #p-tilt .tilt-left{
   padding: 2rem 3.4rem;
+}
+
+#p-tilt .tilt-left p{
+  padding-bottom: 1rem;
 }
 
 #p-tilt .tilt-left-nav{
@@ -781,9 +817,21 @@ hr{ background: white; }
   overflow: hidden;
 }
 
+#p-tilt .tilt-button{
+  background: #959595;
+  border-radius: 5%;
+}
+
+#p-tilt .tilt-button:hover{
+  background: white;
+  color: #959595;
+  text-decoration: none;
+}
+
+
 #p-tilt .tilt-left a{
   color: white;
-  padding: 1rem 0;
+  padding: 0.5rem 0.5rem;
   font-size: 0.9em;
 }
 
