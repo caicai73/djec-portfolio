@@ -276,6 +276,18 @@ hr{ background: white; }
   margin-top: 3rem;
 }
 
+#p-madison .m-expand{
+  height: 0px;
+  margin-top: -70px;
+  overflow: hidden;
+}
+
+#p-madison .madison-left a{
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9em;
+}
+
 #p-madison .trafficlight{
   width: 30px;
   height: 330px;
@@ -631,16 +643,19 @@ hr{ background: white; }
 }
 
 #p-madison .madi-expand-proposal2 img{
-  max-width: 440px;
+  max-width: 500px;
   width: 100%;
   padding: 1rem 5rem;
+}
+
+#p-madison .madi-expand-proposal2{
+  text-align: center;
 }
 
 #p-madison .madi-expand-proposal2 h3{
   color: #959595;
   font-weight: 600;
   text-align: center;
-  padding-top: 0.5rem;
   padding-bottom: 2rem;
 }
 
@@ -692,6 +707,17 @@ hr{ background: white; }
   position: absolute;
   right: 0px;
   top: 0px;
+}
+
+#p-tilt .tilt-expand-mount-text-mob p{
+  text-align: right;
+  display: none;
+}
+
+#p-tilt .tilt-expand-mount-text2 p{
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
 }
 
 #p-tilt .tilt-img3 img{
@@ -746,6 +772,80 @@ hr{ background: white; }
   float: right;
   transform: rotate(180deg);
   margin-right: 3.125rem;
+}
+
+#p-tilt .t-expand{
+  background: white;
+  height: 0px;
+  margin-top: -70px;
+  overflow: hidden;
+}
+
+#p-tilt .tilt-left a{
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9em;
+}
+
+#p-tilt .tilt-expand-batch-title h1{
+  font-weight: 600;
+  margin-top: 3rem;
+  padding: 2rem 4rem;
+}
+
+#p-tilt .tilt-expand-batch-title-mob h1{
+  font-weight: 600;
+  margin-top: 3rem;
+  padding: 2rem 4rem;
+  display: none;
+}
+
+#p-tilt .tilt-expand-batch-new{
+  border-left: 2px solid #5C5D5F;
+}
+
+#p-tilt .tilt-expand-batch-old img{
+  width: 500px;
+  max-width: 100%;
+  padding: 1rem 0;
+}
+
+#p-tilt .tilt-expand-batch-old figcaption{
+  margin: auto;
+  color: #5A5A5A;
+  text-align: center;
+}
+
+#p-tilt .tilt-expand-batch-new img{
+  width: 500px;
+  max-width: 100%;
+  padding: 1rem 0;
+  margin-left: 1rem;
+}
+
+#p-tilt .tilt-expand-batch-new figcaption{
+  margin: auto;
+  color: #5A5A5A;
+  text-align: center;
+}
+
+#p-tilt .tilt-expand-batch-text p{
+  float: right;
+  padding-top: 2rem;
+  padding-right: 3rem;
+  text-align: right;
+  color: #5A5A5A;
+}
+
+#p-tilt .tilt-expand-mount h1{
+  font-weight: 600;
+  padding: 0 3.5rem;
+}
+
+#p-tilt .tilt-expand-mount img{
+  width: 1000px;
+  max-width: 100%;
+  padding: 3rem;
 }
 
 #p-auxi{
@@ -1329,13 +1429,44 @@ hr{ background: white; }
   }
   #p-madison .madi-expand-proto-title h3{
     padding: 0 3.5rem;
+    text-align: center;
   }
+  #p-madison .madi-expand-prototypes img{ padding: 0.5rem 2rem;}
   #p-madison .madi-expand-proposal img{
     border: none;
+  }
+  #p-madison .madi-expand-proposal-title h3{
+    text-align: center;
+    padding: 0;
   }
 
   #p-tilt .tilt-left{ margin-top: 5.5rem; }
   #p-tilt .tilt-left-nav{ display: none;}
+  #p-tilt .t-expand{ height: 2570px; }
+  #p-tilt .tilt-expand-batch-title h1{ display: none; }
+  #p-tilt .tilt-expand-batch-title-mob h1{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0 2rem;
+    font-size: 2.7em;
+  }
+  #p-tilt .tilt-expand-batch-old img{ padding: 0; }
+  #p-tilt .tilt-expand-batch-new{ border: none; }
+  #p-tilt .tilt-expand-batch-new img{
+    margin: 0;
+    padding: 0;
+  }
+  #p-tilt .tilt-expand-batch-text p{ padding: 0 3rem; }
+  #p-tilt .tilt-expand-mount-text-mob p{
+    padding: 0 3rem;
+    display: block;
+  }
+  #p-tilt .tilt-expand-mount-text2 p{ display: none; }
+  #p-tilt .tilt-expand-mount h1{
+    padding: 0 2rem;
+    text-align: center;
+  }
 
   #p-auxi .auxi-left{ margin-top: 5.5rem; }
   #p-auxi .auxi-left-nav{ display: none;}
@@ -1541,6 +1672,8 @@ hr{ background: white; }
   #p-madison .green2{ right: 0.7875rem; }
   #p-madison .green2-b{ right: 0.5375rem; }
 
+  #p-tilt .t-expand{ height: 3300px; }
+
   #logos .logos-genosis-img2 img{
     float: none;
     width: 100%;
@@ -1574,13 +1707,17 @@ hr{ background: white; }
 @media screen and (min-width: 600px) {
   #p-madison .madison-left p{ width: 300px; }
   #p-tilt .tilt-left p{ width: 300px; }
+  #p-tilt .tilt-expand-batch-text p{ width: 360px; }
+  #p-tilt .tilt-expand-mount-text p{ width: 240px; }
+  #p-tilt .tilt-expand-mount-text2 p{ width: 240px; }
   #p-auxi .auxi-left p{ width: 300px; }
   #logos .logos-left p{ width: 300px; }
+
 }
 
 /* Use to see padding/margin outlines */
-/* {
+/* *{
   	background: #000 !important;
   	color: #0f0 !important;
   	outline: solid #f00 1px !important;
-}*/
+} */
