@@ -1521,7 +1521,7 @@ hr{ background: white; }
   #p-madison .madison-left{ margin-top: 5.5rem; }
   #p-madison .madison-left-nav{ display: none;}
   #p-madison .over2{ padding: 6.3rem 3rem; }
-  #p-madison .m-expand{ min-height: 3000px; }
+  #p-madison .m-expand{ max-height: 3000px; }
   #p-madison .madi-expand-right{ display: none; }
   #p-madison .madi-expand-right-mobile{
     display: block;
