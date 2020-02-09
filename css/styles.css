@@ -1351,7 +1351,7 @@ hr{ background: white; }
 }
 
 @media screen and (max-width: 451px) and (min-width: 376px){
-  #p-madison .m-expand{ max-height: 2900px; }
+  #p-madison .m-expand{ max-height: 3100px; }
   #p-madison .trafficlight{
     height: 200px;
   }
@@ -1522,7 +1522,7 @@ hr{ background: white; }
   #p-madison .madison-left{ margin-top: 5.5rem; }
   #p-madison .madison-left-nav{ display: none;}
   #p-madison .over2{ padding: 6.3rem 3rem; }
-  #p-madison .m-expand{ max-height: 3000px; }
+  #p-madison .m-expand{ max-height: 3400px; }
   #p-madison .madi-expand-right{ display: none; }
   #p-madison .madi-expand-right-mobile{
     display: block;
