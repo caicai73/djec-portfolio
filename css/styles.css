@@ -6,6 +6,7 @@
 
 html, body{
   margin: 0;
+  margin-top: -7.1rem;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
@@ -337,6 +338,11 @@ hr{ background: white; }
 #p-madison .clickme{
   font-size: 0.9em;
   color: white;
+}
+
+#p-madison .clickme:hover{
+  font-size: 0.9em;
+  color: #BB0000;
 }
 
 #p-madison .trafficlight{
@@ -1489,9 +1495,7 @@ hr{ background: white; }
 }
 
 @media screen and (max-width: 600px) {
-  html, body{
-    margin-top: 0rem;
-  }
+  html, body{ margin-top: 2rem; }
   nav #navnav{
     padding: 0;
     position: fixed;
@@ -1672,6 +1676,7 @@ hr{ background: white; }
 }
 
 @media screen and (max-width: 767px) and (min-width: 601px){
+  html, body{ margin-top: 2rem; }
   nav #navnav{
     padding: 0;
     position: fixed;
