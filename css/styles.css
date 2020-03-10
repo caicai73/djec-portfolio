@@ -289,7 +289,7 @@ hr{ background: white; }
   align-items: baseline;
   padding: 0.5rem;
   margin: 0;
-  width: 135px;
+  width: 160px;
 }
 
 #p-madison .btn:hover{
@@ -305,19 +305,22 @@ hr{ background: white; }
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  left: 80px;
+  left: 10px;
   top: 0;
 }
 
 #p-madison .round:hover{
   background: #BB0000;
+  color: #BB0000;
 }
 
 #p-madison .text {
   position: absolute;
-  width: 68px;
+  width: 150px;
   height: 10px;
+  padding-left: 1.5rem;
 }
+
 
 .horizontal {
   animation: horizontal_7003 5.72s ease infinite;
@@ -340,10 +343,7 @@ hr{ background: white; }
   color: white;
 }
 
-#p-madison .clickme:hover{
-  font-size: 0.9em;
-  color: #BB0000;
-}
+#p-madison .clickme:hover{ color: #BB0000; }
 
 #p-madison .trafficlight{
   width: 30px;
@@ -851,7 +851,7 @@ hr{ background: white; }
   align-items: baseline;
   padding: 0.5rem;
   margin: 0;
-  width: 135px;
+  width: 160px;
 }
 
 #p-tilt .btn:hover{
@@ -863,8 +863,9 @@ hr{ background: white; }
 
 #p-tilt .text {
   position: absolute;
-  width: 68px;
+  width: 150px;
   height: 10px;
+  padding-left: 1.5rem;
 }
 
 #p-tilt .round {
@@ -873,7 +874,7 @@ hr{ background: white; }
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  left: 80px;
+  left: 10px;
   top: 0;
 }
 
@@ -881,12 +882,14 @@ hr{ background: white; }
   background: #5A5A5A;
 }
 
-#txt .clickme{
+#p-tilt .clickme{
   position: relative;
   bottom: 0;
   height: 10px;
   top: 7px;
 }
+
+#p-tilt .clickme:hover{ color: #5A5A5A; }
 
 #cta{
   width: 100%;
