@@ -14,6 +14,21 @@ html, body{
   line-height: normal;
 }
 
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+/* .no-js #loader { display: none;  } */
+/* .js #loader { display: block; position: absolute; left: 100px; top: 0; } */
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../preloader/Preloader_7.gif') center no-repeat #fff;
+}
+
 .openSans{
   font-family: 'Open Sans', sans-serif;
 }
@@ -181,6 +196,7 @@ hr{ background: white; }
 
 #resume #resume-date {
   padding-bottom: 1.5rem;
+  font-size: 0.9em;
 }
 
 #resume .nav-style{ color: white; }
@@ -231,17 +247,19 @@ hr{ background: white; }
 #resume .list-item {
   display: table-row;
   vertical-align: middle;
+  font-size: 0.9em;
 }
 #resume .list-title {
   line-height: 40px;
-  font-size: 1.6em;
-  font-weight: 200;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 #resume .list-text {
   line-height: 40px;
-  font-size: 1.6em;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 200;
+  /* text-transform: uppercase; */
 }
 #resume .red-line {
   background: white;
@@ -439,7 +457,6 @@ hr{ background: white; }
   overflow: hidden;
   box-shadow: inset 0 0 2px 1px rgba(0,0,0,.05);
 }
-
 #p-madison .check {
   position: absolute;
   display: block;
@@ -551,6 +568,65 @@ hr{ background: white; }
   margin-top: -70px;
   overflow: hidden;
 }
+
+#p-madison .features h3{ margin-left: 3.5rem; }
+
+#p-madison .hrc img{ padding: 3rem 5rem 1rem; }
+#p-madison .hrc #title{
+  margin-left: 3rem;
+  text-align: center;
+}
+#p-madison .hrc #info{
+  margin-left: 3rem;
+  padding: 0 1.8rem;
+  text-align: center;
+}
+
+#p-madison .lcd img{ padding: 3rem 3.5rem 1rem; }
+#p-madison .lcd #title{ text-align: center; }
+#p-madison .lcd #info{
+  padding: 0 4rem;
+  text-align: center;
+}
+
+#p-madison .battery img{ padding: 3rem 2.5rem 1rem; }
+#p-madison .battery #title{
+  margin-right: 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+#p-madison .battery #info{
+  margin-right: 2rem;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+#p-madison .antenna img{ padding: 3rem 5rem 1rem; }
+#p-madison .antenna #title{
+  margin-left: 3rem;
+  text-align: center;
+}
+
+#p-madison .uhandle img{ padding: 3rem 3.5rem 1rem; }
+#p-madison .uhandle #title{ text-align: center; }
+#p-madison .uhandle #info{
+  padding: 0 4rem;
+  text-align: center;
+}
+
+#p-madison .connector img{ padding: 3rem 2.5rem 1rem; }
+#p-madison .connector #title{
+  margin-right: 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+#p-madison .connector #info{
+  margin-right: 2rem;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+#p-madison .break { margin: 5rem; }
 
 #p-madison .btn{
   display: flex;
@@ -981,6 +1057,109 @@ hr{ background: white; }
   text-align: center;
   padding-bottom: 2rem;
 }
+
+#p-madison .protect h1{
+  font-size: 2.5em;
+  line-height: 0.9;
+  font-weight: 600;
+  padding: 3rem 3rem 0 5rem;
+}
+#p-madison .protect2 img{ width: 80%; }
+#p-madison .protect3 p{
+  text-align: right;
+  width: 80%;
+}
+
+#p-madison .sma-ufl h1{
+  padding: 3rem 5rem 0 3rem;
+  font-size: 2.5em;
+  line-height: 0.9;
+  font-weight: 600;
+  text-align: right;
+}
+#p-madison .sma-ufl2 img{
+  width: 80%;
+  margin-left: 5rem;
+}
+#p-madison .sma-ufl-text p{
+  text-align: right;
+  padding: 3rem 5rem 0 0;
+}
+
+#p-madison .ant1 img{
+  /* width: 300px; */
+  padding: 2rem 0 0 5rem;
+}
+#p-madison .ant1 p{
+  text-align: center;
+  margin: 2rem 0 0 4rem;
+  padding: 0 1.5rem;
+}
+
+#p-madison .ant2 img{
+  /* width: 300px; */
+  padding: 4rem 2rem 0 2rem;
+}
+#p-madison .ant2 p{
+  text-align: center;
+  margin: 2rem 2.5rem 0 1.5rem;
+}
+#p-madison .ant3 img{
+  /* width: 300px; */
+  padding-right: 4rem;
+}
+#p-madison .ant3 p{
+  text-align: center;
+  margin: 2rem 5rem 0 0;
+  padding: 0 1rem;
+}
+
+#p-madison .wireframe h1{
+  padding: 10rem 3rem 0 5rem;
+  font-size: 2.5em;
+  line-height: 0.9;
+  font-weight: 600;
+}
+
+#p-madison .wireframe-img img{
+  width: 100%;
+  padding: 3rem;
+}
+#p-madison .wireframe-text p{
+  position: absolute;
+  top: 7rem;
+  right: 4rem;
+  text-align: right;
+}
+#p-madison .wireframe-text-mob p{ display: none; }
+
+#p-madison .batt-sol h1{
+  padding: 10rem 5rem 0 3rem;
+  font-size: 2.5em;
+  line-height: 0.9;
+  font-weight: 600;
+  text-align: right;
+}
+#p-madison .batt-sol-img img{
+  max-width: 600px;
+  width: 100%;
+  padding: 3rem;
+}
+#p-madison .batt-sol-text p{
+  margin: 2rem 5rem 0 0;
+  padding: 7rem 0 0 3.5rem;
+  text-align: right;
+}
+#p-madison .batt-sol2-text-mob p{ display: none}
+
+#p-madison .batt-sol2 img{ margin: 0 2rem 0 14rem; }
+#p-madison .batt-sol2-text p{
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+}
+#p-madison .batt-sol3 img{ margin: 0 3rem; }
+
 
 #p-tilt{ background: #ECB90F; }
 
@@ -1598,11 +1777,11 @@ hr{ background: white; }
 
 #p-cgi .cgi-img img{
   width: 100%;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 #p-cgi hr{
-  border: 2px solid #FF7400;
+  border: 2px solid white;
   margin: 0 3rem;
 }
 
@@ -1690,6 +1869,195 @@ hr{ background: white; }
   user-select: none;
   width: 20px;
   height: 22px;
+}
+
+#p-bplm{
+  color: white;
+  background: #4D4D4D;
+}
+
+#p-bplm .container{
+  padding: 0;
+  margin: 0;
+  max-width: 100%
+}
+
+#p-bplm .bplm-img0 img{ width: 100%; }
+
+#p-bplm h1{
+  font-size: 2.9em;
+  font-weight: 900;
+}
+
+#p-bplm p{
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+#p-bplm .bplm-left{ padding: 2rem 3.4rem; }
+#p-bplm .bplm-left-nav{ padding-top: 2rem; }
+#p-bplm .nav-style{ color: white; }
+#p-bplm .nav-style:hover{
+  color: #FF7400;
+  text-decoration: none;
+}
+
+#p-bplm .projects-nav-title{
+  margin-bottom: 0;
+  padding-right: 3.4rem;
+}
+
+#p-bplm .projects-nav-title li{
+  list-style: none;
+  font-size: 1.25em;
+  font-weight: 200;
+  writing-mode: vertical-rl;
+  float: right;
+  transform: rotate(180deg);
+  padding-bottom: 10.1rem;
+}
+
+#p-bplm .projects-nav-list li{
+  list-style: none;
+  display: inline;
+  font-size: 0.625em;
+  font-weight: 200;
+  padding: 0.625rem 0;
+}
+
+#p-bplm .projects-nav-list{
+  writing-mode: vertical-rl;
+  float: right;
+  transform: rotate(180deg);
+  margin-right: 3.125rem;
+}
+
+#p-bplm #nav2{ padding-bottom: 4.25rem;}
+
+#p-bplm .bplm-img img{
+  width: 100%;
+  padding: 3rem 0 3rem 3rem;
+}
+
+#p-bplm .bplm-img2 img{ width: 80%; }
+
+#p-bplm .bplm-img3 img{
+  width: 100%;
+  padding: 0 3rem;
+}
+
+#p-bplm .bplm-img4 img{
+  width: 100%;
+  padding: 3rem;
+}
+
+#p-bplm .bplm-grey img{ width: 100%; }
+#p-bplm .underB img{ position: relative; }
+#p-bplm .underB3D img{ position: relative; width: 100%;}
+
+#p-bplm model-viewer{
+  width: 400px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  /* margin-top: 7rem;
+  margin-bottom: 7rem; */
+  background: none;
+  border-radius: 300px;
+  position: absolute;
+  top: 0;
+  /* right: 300px; */
+}
+
+#p-bplm .viewer img{ width: 100%; }
+
+#p-bplm .viewer{
+  padding: 0;
+  position: relative;
+  max-height: 500px;
+  width: 100%;
+}
+
+#p-bplm .changeView { padding: 3rem 3.4rem }
+#p-bplm .changeViewText {
+  position: absolute;
+  top: 43%;
+  left: 57%;
+  width: 100%;
+}
+
+#p-bplm.changeViewText p {
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#p-bplm .b { display: block; }
+#p-bplm .toggle {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  width: 60px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #ddd;
+  margin: -20px -40px;
+  overflow: hidden;
+  box-shadow: inset 0 0 2px 1px rgba(0,0,0,.05);
+}
+#p-bplm .check {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 6;
+}
+
+#p-bplm .check:checked ~ .track { box-shadow: inset 0 0 0 20px #950015; }
+#p-bplm .check:checked ~ .switch {
+  right: 2px;
+  left: 22px;
+  transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  transition-property: left, right;
+  transition-delay: .05s, 0s;
+}
+
+#p-bplm .switch {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 22px;
+  background-color: #fff;
+  border-radius: 36px;
+  z-index: 1;
+  transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  transition-property: left, right;
+  transition-delay: 0s, .05s;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+#p-bplm .track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.05);
+  border-radius: 40px;
+}
+
+#b-view-js-2D { display: block; }
+#b-view-js-3D { display: none; }
+
+#p-bplm .bplm-img5 img{
+  width: 100%;
+  padding: 3rem 0 3rem 3rem;
 }
 
 #logos{
@@ -1924,7 +2292,7 @@ hr{ background: white; }
 
 @media screen and (max-width: 321px) {
   #resume .list-wrapper { width: 100%; }
-  #resume .list-text { font-size: 1.2em; }
+  #resume .list-text { font-size: 0.9em; }
   #resume h2{ font-size: 2.4em; }
   #resume h3{ font-size: 1.7em; }
 
@@ -1944,8 +2312,10 @@ hr{ background: white; }
 }
 
 @media screen and (max-width: 376px) {
+  #resume h3{ font-size: 1.2em; }
   #resume .list-wrapper { width: 100%; }
-  #resume .list-text { font-size: 1.2em; }
+  #resume .list-item-wrapper { margin-top: 5px; }
+  #resume .list-text { font-size: 0.9em;}
 
   #p-madison .m-expand{ max-height: 2650px; }
   #p-madison .trafficlight{
@@ -2032,8 +2402,10 @@ hr{ background: white; }
 }
 
 @media screen and (max-width: 451px) and (min-width: 376px){
+  #resume h3{ font-size: 1.6em; }
   #resume .list-wrapper { width: 100%; }
-  #resume .list-text { font-size: 1.4em; }
+  #resume .list-item-wrapper { margin-top: 5px; }
+  #resume .list-text { font-size: 0.9em; }
 
   #p-madison .m-expand{ max-height: 3100px; }
   #p-madison .trafficlight{
@@ -2258,18 +2630,107 @@ hr{ background: white; }
     top: 0%;
     /* margin-bottom: 4rem; */
   }
-  #p-madison .buttonMadiMob .space { padding-bottom: 5rem; }
+
+  #p-madison .buttonMadiMob .space { padding-bottom: 7rem; }
   #p-madison .round {
     margin-left: auto;
     margin-right: auto;
     left: 0;
   }
-  #p-madison .m-expand{ max-height: 3400px; }
+  #p-madison .m-expand{ max-height: 11500px; }
+  #p-madison .features h3{
+    margin: 0;
+    text-align: center;
+  }
+  #p-madison .hrc img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+  }
+  #p-madison .hrc #title{ margin: 0; }
+  #p-madison .hrc #info{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  #p-madison .lcd img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    padding: 0 5rem 0;
+  }
+  #p-madison .lcd #title{ padding-top: 1rem; }
+  #p-madison .lcd #info{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 0 3.5rem 1.5rem;
+  }
+  #p-madison .battery img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    padding: 0 5rem 0;
+  }
+  #p-madison .battery #title{
+    margin: 0;
+    padding-top: 1rem;
+  }
+  #p-madison .battery #info{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  #p-madison .antenna img{
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+  }
+  #p-madison .antenna #title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    padding-bottom: 1.5rem;
+  }
+  #p-madison .uhandle img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    padding: 0 5rem 0;
+  }
+  #p-madison .uhandle #title{
+    margin: 0;
+    padding-top: 1rem;
+  }
+  #p-madison .uhandle #info{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 1rem 3.5rem 2rem;
+  }
+  #p-madison .connector img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    padding: 0 5rem 0;
+  }
+  #p-madison .connector #title{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-top: 1rem;
+  }
   #p-madison .madi-expand-right{ display: none; }
   #p-madison .madi-expand-right-mobile{
     display: block;
     padding: 2rem;
-    margin-top: 5.5rem;
+    margin-top: 2rem;
   }
   #p-madison .madi-expand-right-mobile h1{
     font-size: 2.4em;
@@ -2296,6 +2757,75 @@ hr{ background: white; }
   #p-madison .madi-expand-proposal-title h3{
     text-align: center;
     padding: 0;
+  }
+  #p-madison .protect2 img{ margin: 2rem 0 2rem; }
+  #p-madison .sma-ufl2 img{ margin-top: 2rem; }
+  #p-madison .ant1 img{
+    margin: 1rem 2rem;
+    max-width: 300px;
+    width: 100%;
+  }
+  #p-madison .ant1 p{
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 300px;
+  }
+  #p-madison .ant2 img{
+    margin: 1rem 4.5rem;
+    max-width: 300px;
+    width: 100%;
+  }
+  #p-madison .ant2 p{
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 300px;
+  }
+  #p-madison .ant3 img{
+    margin: 1rem 6rem;
+    max-width: 300px;
+    width: 100%;
+  }
+  #p-madison .ant3 p{
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 300px;
+  }
+  #p-madison .wireframe h1{
+    padding: 7rem 3rem 0 3rem;
+    text-align: center;
+  }
+  #p-madison .wireframe-img img{ padding-top: 1rem; }
+  #p-madison .wireframe-text-mob p{
+    display: block;
+    text-align: center;
+  }
+  #p-madison .wireframe-text p { display: none; }
+  #p-madison .batt-sol h1{
+    text-align: center;
+    padding: 10rem 3rem 0 3rem;
+  }
+  #p-madison .batt-sol-img img{
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  #p-madison .batt-sol2-text-mob p{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+  }
+  #p-madison .batt-sol2-text p{ display: none}
+  #p-madison .batt-sol2 img{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 6rem 2rem 6rem;
+    width: 99%;
+  }
+  #p-madison .batt-sol3 img{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 6rem 2rem 6rem;
+    width: 99%;
   }
 
   #p-tilt .tilt-left{ margin-top: 5.5rem; }
@@ -2592,7 +3122,7 @@ hr{ background: white; }
     left: 67%;
   }
 
-  #p-madison .m-expand{ max-height: 2100px; }
+  #p-madison .m-expand{ max-height: 1000px; }
   #p-madison .trafficlight:after{ left: 8.6625rem; }
   #p-madison .trafficlight2:after{ right: 2.6625rem; }
   #p-madison .red2{ right: 0.7875rem; }
@@ -2645,6 +3175,7 @@ hr{ background: white; }
 }
 
 @media screen and (min-width: 600px) {
+  #resume .list-text { width: 300px; }
   #p-madison .madison-left p{ width: 300px; }
   #p-tilt .tilt-left p{ width: 300px; }
   #p-tilt .tilt-expand-batch-text p{ width: 360px; }
